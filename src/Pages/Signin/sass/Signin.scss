@@ -10,7 +10,7 @@
         }
     }
 
-    div:nth-child(2) {
+    .sublogin {
         // margin: 0px;
         // position: absolute;
         // top: 50%;
@@ -44,21 +44,30 @@
             margin-bottom: 30px;
         }
         .passwordTag{
+
+            @extend.inputtag;
+            padding-left: 0px;
+            height: 41px;
+            margin: auto;
             .inputtag2{
                 position: relative;
                 @extend.inputtag;
+                border: none;
+                height: 39px;
+                width: 250px;
+
+                
             }
             .btnShow{
-                position: absolute;
+                // position: absolute;
                 // right: 25px;
                 // top:242px;
                 color: #00302E;
                 border: none;
                 background-color: transparent;
-                transform: translate(-50% -50%);
-                top: 43%;
-        left: 75%;
-        transform: translate(-30%,-30%);
+                // transform: translate(-50% -50%);
+                padding-top: 10px;
+                
 
                 
             }

@@ -18,14 +18,14 @@
   }
 }
 
-.login div:nth-child(2) {
+.login .sublogin {
   padding-top: 100px;
   padding-left: 3vw;
   padding-right: 3vw;
   text-align: center;
 }
 
-.login div:nth-child(2) h2 {
+.login .sublogin h2 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -35,7 +35,7 @@
   padding-bottom: 30px;
 }
 
-.login div:nth-child(2) .inputtag, .login div:nth-child(2) .passwordTag .inputtag2 {
+.login .sublogin .inputtag, .login .sublogin .passwordTag, .login .sublogin .passwordTag .inputtag2 {
   color: black;
   width: 300px;
   height: 40px;
@@ -46,20 +46,23 @@
   margin-bottom: 30px;
 }
 
-.login div:nth-child(2) .passwordTag .inputtag2 {
-  position: relative;
+.login .sublogin .passwordTag {
+  padding-left: 0px;
+  height: 41px;
+  margin: auto;
 }
 
-.login div:nth-child(2) .passwordTag .btnShow {
-  position: absolute;
+.login .sublogin .passwordTag .inputtag2 {
+  position: relative;
+  border: none;
+  height: 39px;
+  width: 250px;
+}
+
+.login .sublogin .passwordTag .btnShow {
   color: #00302E;
   border: none;
   background-color: transparent;
-  -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
-  top: 43%;
-  left: 75%;
-  -webkit-transform: translate(-30%, -30%);
-          transform: translate(-30%, -30%);
+  padding-top: 10px;
 }
 /*# sourceMappingURL=Signin.css.map */

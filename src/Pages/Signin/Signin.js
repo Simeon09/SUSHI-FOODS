@@ -22,11 +22,11 @@ const Signin = () => {
       <div>
         <img src={loginPicture} alt="loginpicture" />
       </div>
-      <div>
+      <div className="sublogin">
         <h2>Welcome Back!</h2>
         <form>
           <input className="inputtag" type="email" placeholder="Your Email address" /> <br />
-          <span className="passwordTag">
+          <div className="passwordTag">
             <input className="inputtag2"  placeholder="Your Password" 
              type={passwordType}
              onChange={handlepassword}
@@ -36,7 +36,7 @@ const Signin = () => {
              required
             />
             <button className="btnShow" onClick={togglePassword} >show</button>
-          </span>{" "}
+          </div>{" "}
           <br />
           <Button props={"LOGIN"} />
         </form>

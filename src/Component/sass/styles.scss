@@ -6,7 +6,7 @@
     margin: 0px;
     box-sizing: border-box;
     outline: none;
-    color: white;
+    
 }
 
 .font-link {
@@ -261,4 +261,9 @@ nav {
         background-color: $secondColour;
         color: $landingbgcolour;
     }
+    @media screen and (min-width:600px) {
+        width: 488px;
+        height: 60px;
+        margin-bottom: 45px;
+      }
 }

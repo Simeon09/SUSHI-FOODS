@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from './Sidebar'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+        <div><Sidebar/></div>
+
+
+    </div>
   )
 }
 

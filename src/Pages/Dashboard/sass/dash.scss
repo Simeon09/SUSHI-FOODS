@@ -1,0 +1,41 @@
+.dashboard {
+  display: flex;
+  .sidebar {
+      
+    padding-left: 3vw;
+    background: #fbfbfb;
+    height: 100vh;
+
+
+    .sidelogo {
+      padding-top: 70px;
+      img {
+        width: 80%;
+      }
+    }
+
+    .sideNav {
+      padding-top: 70px;
+      .sideicon {
+        display: flex;
+        gap: 15px;
+        padding-bottom: 50px;
+        color: #707070;
+      }
+      .fistsideicon.active{
+        display: flex;
+        gap: 15px;
+        background: #EFEFEF;
+        border-radius: 12px;
+        padding: 10px 5px 10px 10px;
+          color: black;
+          padding-bottom: -20px;
+          width: 90%;
+          
+      }
+    }
+  }
+  .mainPage {
+    flex: 4;
+  }
+}

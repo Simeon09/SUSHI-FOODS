@@ -7,19 +7,20 @@ import { ToastContainer, toast } from 'react-toastify';
  import 'react-toastify/dist/ReactToastify.css';
 
 const Signin = () => {
-    // const [passwordType, setpasswordType] = useState("password");
-    // const [passwordinputType, setpasswordInputType] = useState("");
+    const [passwordShown, setpasswordShown] = useState(false)
     // const handlepassword = (e) => {
     //   setpasswordInputType(e.target.value);
     // };
-    // const togglePassword = (e) => {
-    //   e.preventDefault();
+    const togglePassword = (e) => {
+      e.preventDefault();
+
+      setpasswordShown(!passwordShown)
     //   if (passwordType === "password") {
     //     setpasswordType("text");
     //     return;
     //   }
     //   setpasswordType("password");
-    // };
+    };
 
     const [loginData, setloginData] = useState({
       email:"",
@@ -37,7 +38,7 @@ const Signin = () => {
       let loginUser = JSON.parse(sessionStorage.getItem('user'))
       console.log(loginUser)
       console.log(loginData)
-      if (loginData?.email == loginUser?.email && loginData?.password == loginUser?.password){
+      if (loginData?.email === loginUser?.email && loginData?.password ===loginUser?.password){
         toast.success('login successful')
         setInterval(()=>{
           window.location='/Dashboard'
@@ -59,14 +60,14 @@ const Signin = () => {
           <input className="inputtag" type="email" name="email" onChange={handleChange} placeholder="Your Email address" /> <br />
           <div className="passwordTag">
             <input className="inputtag2"  placeholder="Your Password" 
-            //  type={passwordType}
+            type={passwordShown?"text":"password"}
              onChange={handleChange}
-            //  value={passwordinputType}
+            
              name="password"
              id="password"
              required
             />
-            {/* <button className="btnShow" onClick={togglePassword} >show</button> */}
+             <button className="btnShow" onClick={togglePassword} >show</button> 
           </div>{" "}
           <br />
           <Button props={"LOGIN"} />

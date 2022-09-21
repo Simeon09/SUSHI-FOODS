@@ -1,14 +1,14 @@
 .dashboard {
   display: flex;
+
   .sidebar {
-      
-    padding-left: 3vw;
+    padding-left: 2vw;
     background: #fbfbfb;
     height: 100vh;
 
-
     .sidelogo {
       padding-top: 70px;
+
       img {
         width: 80%;
       }
@@ -16,26 +16,148 @@
 
     .sideNav {
       padding-top: 70px;
+
       .sideicon {
         display: flex;
         gap: 15px;
         padding-bottom: 50px;
         color: #707070;
+
+        .btn1 {
+          border: 1px solid #06e775;
+          background: #06e775;
+          border-radius: 5px;
+          margin-left: 40px;
+        }
+
+        .btn2 {
+          border: 1px solid #f3c294;
+          background: #f3c294;
+          border-radius: 5px;
+          margin-left: 27px;
+        }
       }
-      .fistsideicon.active{
+
+      .fistsideicon.active {
         display: flex;
         gap: 15px;
-        background: #EFEFEF;
+        background: #efefef;
         border-radius: 12px;
         padding: 10px 5px 10px 10px;
-          color: black;
-          padding-bottom: -20px;
-          width: 90%;
-          
+        color: black;
+
+        width: 90%;
       }
     }
   }
+
   .mainPage {
     flex: 4;
+    padding-top: 90px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 33px;
+        color: #00302E;
+      }
+
+      p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 33px;
+        color: rgba(0, 0, 0, 0.69);
+
+
+      }
+    }
+
+    .contents {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 40px;
+      
+    
+
+
+      .cards {
+        background: rgba(255, 255, 255, 0.83);
+        border: 0.3px solid rgba(0, 48, 46, 0.14);
+        border-radius: 5px;
+        width: 240px;
+        height: 307px;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        
+        margin-bottom: 30px;
+
+
+        .foodImage {
+          justify-content: center;
+          margin: auto;
+          width: 50%;
+        }
+
+        h2 {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 33px;
+          color: #00302E;
+
+        }
+
+        p {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 21px;
+          color: rgba(0, 0, 0, 0.69);
+
+
+        }
+
+        .addprice {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 20px;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          button {
+            color: #06E775;
+            border: none;
+            background-color: transparent;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 33px
+          }
+
+          .price {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 33px;
+          }
+        }
+      }
+    }
   }
 }

@@ -175,4 +175,13 @@
   font-size: 13px;
   line-height: 33px;
 }
+
+.dashboard .back-drop {
+  background-color: rgba(63, 61, 61, 0.692);
+  height: 100%;
+  position: fixed;
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
+  width: 100%;
+}
 /*# sourceMappingURL=dash.css.map */

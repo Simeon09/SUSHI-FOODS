@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import Dashlogo from "../../Component/Images/dashlogo.png";
 
 import dashIcon from "../../Component/Images/dash.png.png";
@@ -13,6 +13,8 @@ import balls from '../../Component/Images/balls.svg';
 import spagg from '../../Component/Images/spagg.svg';
 import bread from '../../Component/Images/bread.svg';
 import china from '../../Component/Images/china.svg';
+import AddCart from './Modal/AddCart'
+import { useState } from "react";
 
 const Sidebar = () => {
   let userDetails = JSON.parse(sessionStorage.getItem("user",))
@@ -32,12 +34,14 @@ const Sidebar = () => {
     {id:2, foodname:"Stir Fry Pasta", image: bread, content:"The in-house pasta and chicken by chef Moose", price:"N 1,000.00"},
     {id:3, foodname:"Stir Fry Pasta", image: china, content:"The in-house pasta and chicken by chef Moose", price:"N 1,000.00"},
   ]
+  const [Show, setShow] = useState(false)
 
-  
+  const CloseHandler = ()=> setShow(false)
 
   
   return (
     <div className="dashboard">
+      {Show ? <div onClick={CloseHandler } className="back-drop"></div> : null}
 
       <div className="sidebar">
         <div className="sidelogo">
@@ -84,7 +88,7 @@ const Sidebar = () => {
                <p>The in-house pasta and <br/> chicken by chef Moose</p>
                <div className="addprice">
                 <div className="price">{food.price}</div>
-                <div><button>Add to cart</button></div>
+                <div><button onClick={()=>setShow(true)}>Add to cart</button></div>
                </div>
 
             </div>
@@ -106,6 +110,10 @@ const Sidebar = () => {
             </div>
             )
           }
+        </div>
+        <div>
+        <AddCart show={Show} close={CloseHandler} className="AddCart"/>
+
         </div>
       </div>
     </div>

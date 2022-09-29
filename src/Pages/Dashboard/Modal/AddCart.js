@@ -30,10 +30,10 @@ const AddCart = ({show, close}) => {
       <div>
         <span>
             <button>-</button>
-            2
+            <p>2</p>
             <button>+</button>
         </span>
-        <span><p>Add to cart</p></span>
+        <span><button>Add to cart</button></span>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const AddCart = ({show, close}) => {
         opacity: show ? '1' : '0'
     }
     }>
-        <button onClick={close}>close</button>
+        {/* <button onClick={close}>close</button> */}
       <img src={Bread} alt="bread" className="foodmodal" />
       
       <h5>Blueberry Toasts and smoothie</h5>

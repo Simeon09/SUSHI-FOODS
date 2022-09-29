@@ -7,6 +7,7 @@
   right: 0px;
   text-align: center;
   width: 521px;
+  padding-bottom: 210px;
 }
 
 .Add-to-Cart .foodmodal {
@@ -15,7 +16,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 70px;
+  padding-top: 8git0px;
   padding-bottom: 20px;
 }
 
